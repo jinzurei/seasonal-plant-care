@@ -28,7 +28,7 @@ Python test file, and any project data files such as .txt and .csv files and
 link to video walkthrough if needed.
 
 ================================================================================================================================================
-W07 Final Project - Tanner Livingston 4/13/2025 final submission
+W07 Final Project - 4/13/2025 final submission
 Second Report for a Student Chosen Project
 
 1. In the table below, list the dates, amount of time spent, and
