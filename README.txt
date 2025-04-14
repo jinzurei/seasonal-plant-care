@@ -1,5 +1,5 @@
 # 🌿 Seasonal Plant Care Assistant - Final Project Summary
-**Tanner Livingston**  
+
 BYU–Idaho | CSE 111: Programming with Functions  
 Week 07 - Student Chosen Project
 
