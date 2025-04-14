@@ -1,0 +1,86 @@
+Second Report for a Student Chosen Project
+
+Do the following:
+
+1. In the table below, list the dates, amount of time spent, and
+description of the work that you did on your project. Follow the example
+that is in the first row of the table below. Include the time you spent
+doing any of the following:
+    a. discussing your project with your teacher, tutor, or fellow students
+    b. researching by reading articles and watching applicable videos
+    c. designing your project by drawing diagrams and other applicable documents
+    d. writing experimental code
+    d. writing code for your project
+    e. writing test functions
+    f. debugging your code
+    g. any other activity that helped you complete your project
+
+=============Example====================
+            Time Spent
+   Date       (hours)   Description of Work
+----------  ----------  -------------------------
+2021-12-03      2.5     Wrote two program functions and two test functions
+2021-12-03      .5      Watched video on 
+=============Example====================
+
+2. In Canvas, submit this completed text file, your Python program, your
+Python test file, and any project data files such as .txt and .csv files and
+link to video walkthrough if needed.
+
+================================================================================================================================================
+W07 Final Project - Tanner Livingston 4/13/2025 final submission
+Second Report for a Student Chosen Project
+
+1. In the table below, list the dates, amount of time spent, and
+description of the work that you did on your project.
+
+   Date       Time Spent (hours)   Description of Work
+----------   ------------------   ---------------------------------------------------------------------------------------
+2025-04-07           2.0          Started designing the program structure and planning how the user flow would work
+2025-04-07           1.5          Created the flowchart and wrote out how the menu system would function with seasonal logic
+2025-04-08           2.0          Did plant research and started collecting seasonal care tips for common indoor plants
+2025-04-09           1.0          Organized the data into a CSV manually and made sure categories and traits were consistent
+2025-04-10           1.0          Finalized flowchart and adjusted the structure to match proposal goals
+2025-04-11           2.0          Built core program: CSV loader, plant search, seasonal logic, menu + output
+2025-04-11           0.5          Improved the search system to handle multiple keywords and partial matches
+2025-04-12           2.5          Wrote full pytest test suite with dynamic testing and randomized search target
+2025-04-12           1.0          Cleaned up output and added emojis to both main and test display
+2025-04-13           1.0          Final testing, small bug fixes, added TOML config to let test output print normally
+2025-04-13           0.5          Wrote this report and prepped everything for submission
+
+Total time: Just over 14 hours(had a little fun curating the CSV list)
+
+---
+
+2. Submission Notes:
+
+This program is a seasonal plant care assistant that pulls from a curated plant database and gives users adaptive care recommendations based on the current time of year. The idea was to build something clean and simple on the surface, but flexible and genuinely helpful under the hood the kind of thing someone might actually use, not just a proof of concept.
+
+The CSV file might look basic, but it's not. Every plant entry was hand-written and cross-referenced with actual care guides, then rewritten to match a seasonal format. Each plant has unique advice and individual spring/summer/fall/winter care notes not just repeated filler. Categories, traits, and terminology were also standardized manually so the search tool could work reliably. It took time to balance it all so that it would stay readable in the console, while still being useful and accurate. A lot of care went into making the data both functional and clean.
+
+The main program brings all of that together and wraps it in a structured menu with seasonal logic. It detects the current date and dynamically pulls the right care advice. Users can either:
+- Look up any plant by name
+- Or run a general search based on traits, lighting, water needs, or even partial matches
+
+The search logic isn’t just basic string matching. It normalizes input and checks across the plant's name, category, and trait fields and can handle multi-word input like “low light succulent vine.” The goal was to make the experience intuitive, even if the user doesn’t remember the exact plant name. Results come back as a numbered list, and users can select one to get a full breakdown of that plant's info for the current season.
+
+And then there’s the test program. This part went way beyond basic unit testing. It dynamically selects a random plant from the CSV, then tests multiple conditions:
+- Whether that plant can be found by its exact name
+- Whether any of its traits can be used to locate it
+- Whether a partial version of one of its traits still matches
+- Whether nonsense input returns nothing
+
+Each test prints out progress along the way including which plant was selected, what trait was tested, how many matches came back, and emoji feedback to keep it clear. It’s easy to run and understand, and it helps verify that the search tool performs consistently no matter what data is used.
+
+The "pyproject.toml" file makes sure all the print output displays correctly during pytest without needing to manually pass "-s", which is great for future portability or grading. Everything is done using Python’s built-in modules no external libraries were needed. The program is light, flexible, and designed to be expanded later (like adding a GUI or saving plant care logs).
+
+In short, this is more than just a working program it’s something that shows planning, polish, and care in all parts of the design, creating a dynamic search tool.
+
+Included files:
+- "main.py"
+- "plants.csv"
+- "test_plant_care.py"
+- "pyproject.toml"
+- "proposal.txt"
+- "Flowchart.jpeg"
+- "project-report.txt"

@@ -1,0 +1,47 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+
+Seasonal Plant Care Assistant
+
+2. What real-world problem will your program address or help to solve?
+
+Many new or busy plant owners struggle to adapt their care routines to seasonal changes, leading to common issues like root rot, yellowing leaves, or poor growth. This program provides personalized, seasonally-adjusted care tips for houseplants, helping users make small but important changes to their routine without needing to do manual research for each plant.
+
+3. What will you learn from developing this program?
+
+I will improve my understanding of how to:
+- Work with CSV files and structured data
+- Design reusable and testable functions
+- Parse user input and search/filter information
+- Format and display useful output in the terminal
+- Use `pytest` to write and run test functions for core logic
+- Apply real-world data to build a helpful and practical tool
+
+4. What Python modules will your program use?
+
+csv, datetime, pytest
+
+5. List the names of functions you will need?
+
+load_plant_catalog(filename)         # Reads from CSV
+search_plants(plant_list, query)    # Filters plants based on name or traits
+get_current_season(date)            # Maps the date to Spring/Summer/Fall/Winter
+generate_care_summary(plant, season)  # Creates the seasonal care info
+
+test_get_current_season() # Test Functions
+test_search_plants()
+
+6. List the names of the test functions you will write.
+
+test_get_current_season()
+test_search_plants()
